@@ -21,6 +21,9 @@ anydoc ships as an [Agent Skill](https://agentskills.io), so your agent can read
 ```bash
 npx skills add firecrawl/anydoc
 ```
+等效于：  pnpm dlx skills add firecrawl/anydoc
+npx 等价于 pnpm 的 pnpm dlx，都是临时下载执行包，不本地安装
+
 
 The [skill](skills/convert-documents-to-markdown/SKILL.md) teaches the agent to convert documents with the anydoc CLI. Works with [Claude Code](https://claude.ai/code), [Codex](https://openai.com/codex/), [Cursor](https://cursor.com), [OpenCode](https://opencode.ai), and any other [compatible agent](https://agentskills.io/clients).
 
