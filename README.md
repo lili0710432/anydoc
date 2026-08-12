@@ -39,13 +39,17 @@ npx @firecrawl/anydoc - --format csv < data.csv # read stdin
 
 或者 
 
-1.  用  `pnpm add -g @firecrawl/anydoc` 代替 npm指令， 如果系統阻止構建腳本指令， 先執行 `pnpm approve-builds`。  如果沒有pnpm指令，先用 npm 安裝 pnpm 工具 `npm install -g pnpm
+1.  用  `pnpm add -g @firecrawl/anydoc` 代替 npm指令， 如果系統阻止構建腳本指令， 先執行 `pnpm approve-builds`。   
 2.  可以直接執行
 ```bash
 anydoc report.docx               # Markdown to stdout
 anydoc slides.pptx -o slides.md  # or to a file
 anydoc - --format csv < data.csv # read stdin
 ```
+
+ 如果沒有pnpm指令，先用 npm 安裝 pnpm 工具 `npm install -g pnpm`,  如果安裝pnpm失敗，需要先配置下 `npm config set strict-ssl false`
+
+ 
 ### Node.js
 
 ```bash
