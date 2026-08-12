@@ -33,7 +33,7 @@ npx @firecrawl/anydoc - --format csv < data.csv # read stdin
 ```
 
 `npx` downloads the prebuilt binary for your platform on first run. For a permanent `anydoc` command, install globally with `npm install -g @firecrawl/anydoc`. Run `anydoc --help` for all options.
-
+或者 用  `pnpm add -g @firecrawl/anydoc` 代替 npm指令， 如果系統阻止構建腳本指令， 先執行 `pnpm approve-builds`
 ### Node.js
 
 ```bash
